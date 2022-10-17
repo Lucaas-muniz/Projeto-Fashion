@@ -2,93 +2,117 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: 'Roboto', sans-serif;
+    font-family: tahoma, arial, sans-serif;
 }
 
 /*Variables*/
 :root {
     --nav-text-color: #355564;
     --main-color: white;
-    --article-text-color: black;
+    --article-text-color: #252525;
     --article2-text-color: white;
     --h3-text-color: #013d55;
     --footer-color: #001018;
+    --nav-color: #162028;
 }
 
 /*Main*/
-.principal{
-    padding: 10%;
-    text-align: justify;
+.principal {
+    width: 1024px;
+    margin: 20px auto;
 }
 
 /*Header*/
-.cabecalho{
-    background-image: url(/imagens/topo.jpg);
-    padding: 18%;
-    display: flex;
-    flex-direction: row;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: left bottom;
-    margin-bottom: 10%;
+.cabecalho {
+    height: 50px;
+    background-color: var(--nav-color);
+    position: relative;
 }
 
-.cabecalho img{
-    margin: 0 ;
+nav {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
-li{
-    display: inline;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-a{
+.link {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    padding: 13px;
+
+}
+
+a {
     text-decoration: none;
     color: var(--nav-text-color);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+
 }
 
 #logo {
-    margin-top: 0%;
+    margin: 5px 0 0 135px;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-}
 
 /*Article*/
-.artigo{
+.artigo {
     text-align: center;
-    margin-bottom: 10%;
+    padding: 50px 100px;
 }
 
 .artigo p {
-    margin-bottom: 10%;
-    word-spacing: 4px;
     font-size: 120%;
-    line-height: 30px;
+    line-height: 2;
 }
 
-.artigo h1{
+.artigo h1 {
     margin-bottom: 5%;
     font-weight: bold;
-    font-size: 180%;
+    font-size: 250%;
+    color:var(--article-text-color);
 }
-.artigo div{
+
+/*gallery*/
+
+.gallery{
     display: flex;
     flex-direction: row;
+    color: var(--article-text-color);
+    padding: 0 100px 50px 100px;
+}
+
+.card{
+    width: 32%;
+    text-align: center;
+}
+
+.title-card{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /*Article2*/
 
-.artigo2{
+.artigo2 {
     background-image: url(/imagens/bg_detalhe.png);
     background-size: cover;
     background-position: right bottom;
     text-align: left;
-    
+
 }
 
-.artigo2 h2{
+.artigo2 h2 {
     color: var(--article2-text-color);
     margin: 10% 10%;
     font-size: 250%;
@@ -96,7 +120,7 @@ nav{
     line-height: 200%;
 }
 
-.artigo2 p{
+.artigo2 p {
     color: var(--article2-text-color);
     margin: 10% 10%;
     font-size: 180%;
@@ -106,7 +130,7 @@ nav{
 }
 
 /*Article3*/
-.mapa h3{
+#contact {
     text-align: center;
     color: var(--h3-text-color);
     margin-bottom: 10%;
@@ -115,7 +139,7 @@ nav{
 }
 
 /*Footer*/
-footer p{
+footer p {
     text-align: center;
     margin-top: 10%;
     background-color: var(--footer-color);

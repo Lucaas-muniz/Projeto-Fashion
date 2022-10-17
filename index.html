@@ -14,21 +14,21 @@
 </head>
 
 <body>
-    <!-- conteúdo da página-->
+    <!-- conteúdo do topo página-->
     <div class="principal">
         <header class="cabecalho">
-
-
+            <img id="logo" src="/imagens/logo.png" alt="logo fashion">
             <nav>
                 <ul>
-                    <img id="logo" src="/imagens/logo.png" alt="logo fashion">
                     <li class="link"><a href="#" target="_self">PORTFOLIO</a></li>
                     <li class="link"><a href="#" target="_self">ABOUT US</a></li>
                     <li class="link"><a href="#" target="_self">CONTACT</a></li>
                 </ul>
             </nav>
-
         </header>
+        <img id="topo" src="/imagens/topo.jpg" alt="Modelo feminina">
+
+        <!-- conteudo principal-->
         <main class="conteudo">
             <article class="artigo">
                 <h1>New Fashion Everything Never Enough</h1>
@@ -39,18 +39,30 @@
                     malesuada laoreet. Aenean quis tortor a odio tempus tincidunt. Vivamus rutrum<br>nulla sed metus
                     congue bibendum. Sed ut aliquam purus. Donec odio mauris, commodo sed dignissim vitae,<br>dapibus
                     eget mauris.</p>
-                <div>
-                    <div class="art1"><img src="/imagens/modelo1.jpg" alt="Vest Romasa"></div>
-                    <p>Strong & charismatic</p>
-                    <div class="art1"><img src="/imagens/modelo2.jpg" alt="Jacket Fima"></div>
-                    <p>Strong Sersonality</p>
-                    <div class="art1"><img src="/imagens/modelo3.jpg" alt="Jacket Black Kira"></div>
-                    <p>Power Fascinating</p>
-                </div>
             </article>
+
+            <section class="gallery">
+                <article class="card"><img src="/imagens/modelo1.jpg"
+                        alt=" Modelo masculinno vestindo sobretudo preto da Vest Romasa">
+                    <p class="title-card">Vest Romasa</p>
+                    <p id="p-card">Strong & charismatic</p>
+                </article>
+
+                <article class="card"><img src="/imagens/modelo2.jpg"
+                        alt=" modelo feminina vestindo casaco da Jacket Fima">
+                    <p class="title-card">Jacket Fima</p>
+                    <p>Strong Sersonality</p>
+                </article>
+
+                <article class="card"><img src="/imagens/modelo3.jpg"
+                        alt=" modelo feminina vestindo casaco preto da Kira">
+                    <p class="title-card">Jacket Black Kira</p>
+                    <p>Power Fascinating</p>
+                </article>
+            </section>
+
             <article class="artigo2">
-                <h2>Everything Never Enough<br>just Fashion
-                </h2>
+                <h2>Everything Never Enough<br>just Fashion</h2>
                 <p>
                     Praesent placerat eros eget lacus ullamcorper, id dapibus ante vestibulum. Curabitur quis
                     condimentum diam. Duis aliquet erat vel laoreet tincidunt. Pellentesque vitae varius ligula.
@@ -60,16 +72,20 @@
                     sollicitudin nisl volutpat at.
                 </p>
             </article>
-            <article class="mapa">
-                <h3>Call me now for Design<br>012-1234-4567</h3>
+            <div id="contact">
+                <address>Call me now for Design<br>012-1234-4567</address>
+            </div>
+
+            <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88225.20896162745!2d-45.621116392825016!3d-22.720662133032178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc89cbf10d10bf%3A0x42ed1a032c8ae78f!2sCampos%20do%20Jord%C3%A3o%2C%20SP%2C%2012460-000!5e0!3m2!1spt-BR!2sbr!4v1665064945240!5m2!1spt-BR!2sbr"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
+            </div>
         </main>
+        <!-- conteudo rodape-->
         <footer>
-            <p>Copyright   &copy;   fastfashion.com</p>
+            <p>Copyright &copy; fastfashion.com</p>
         </footer>
     </div>
 </body>
