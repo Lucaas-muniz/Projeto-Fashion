@@ -14,6 +14,7 @@
     --h3-text-color: #013d55;
     --footer-color: #001018;
     --nav-color: #162028;
+    --article2-color: #003d52;
 }
 
 /*Main*/
@@ -55,7 +56,11 @@ a {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 5px;
+    transition: color .3s linear;
+}
 
+a:hover{
+color:var(--main-color);
 }
 
 #logo {
@@ -105,19 +110,24 @@ a {
 /*Article2*/
 
 .artigo2 {
+    background-color: var(--article2-color);
     background-image: url(/imagens/bg_detalhe.png);
-    background-size: cover;
     background-position: right bottom;
     text-align: left;
+    background-repeat: no-repeat;
+    padding: 100px;
+    margin-bottom: 10%;
 
 }
 
 .artigo2 h2 {
+    text-transform: uppercase;
     color: var(--article2-text-color);
     margin: 10% 10%;
-    font-size: 250%;
+    font-size: 280%;
     padding-top: 10%;
     line-height: 200%;
+    font-weight: normal;
 }
 
 .artigo2 p {
@@ -125,8 +135,9 @@ a {
     margin: 10% 10%;
     font-size: 180%;
     margin-bottom: 10%;
-    line-height: 150%;
+    line-height: 1.5;
     padding-bottom: 10%;
+    width: 70%;
 }
 
 /*Article3*/
@@ -136,6 +147,11 @@ a {
     margin-bottom: 10%;
     font-weight: bold;
     font-size: 180%;
+    text-transform: uppercase;
+}
+
+#contact address{
+    font-style: normal;
 }
 
 /*Footer*/
@@ -144,5 +160,7 @@ footer p {
     margin-top: 10%;
     background-color: var(--footer-color);
     color: var(--nav-text-color);
-    padding: 3% 0;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 5px;
 }
